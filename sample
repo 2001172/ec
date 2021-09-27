@@ -1,4 +1,4 @@
-
+```uml
 @startuml
 center header <size:20><b>メイン処理</b></size>
 
@@ -68,3 +68,4 @@ center header <size:20><b>メイン処理</b></size>
   end
  end
 @enduml
+```
