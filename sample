@@ -1,6 +1,6 @@
-uml 
-@startuml 
- center header <size:20><b>メイン処理</b></size>
+
+@startuml
+center header <size:20><b>メイン処理</b></size>
 
  opt ログイン
   hnote across: ログイン処理
@@ -38,10 +38,9 @@ uml
  opt ログアウト
   hnote across: ログアウト処理
  end
-@enduml
 
-uml
-@startuml
+
+
  center header <size:20><b>ログイン処理</b></size>
  loop ログイン成功まで
   opt 未登録
@@ -68,5 +67,4 @@ uml
    Webサーバー ->ユーザー:失敗表示
   end
  end
-  
 @enduml
