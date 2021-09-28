@@ -1,10 +1,9 @@
-
-uml。
-@staltuml
-  center header <size:20><b>出品</b></size>
-  opt ログイン
-    hnote across: ログイン処理
-  end
-  
-  loop 出品処理成功まで
-    loop　情報入力完了まで
+uml
+@startuml
+ center header <size:20><b>出品</b></size>
+  ユーザー -> Webサーバー:商品情報入力
+  Webサーバー -> DBサーバー:商品登録申請
+  DBサーバー -> DBサーバー:商品登録処理
+  DBサーバー -> Webサーバー:商品登録結果
+  Webサーバー ->ユーザー:出品完了メッセージ
+@enduml
