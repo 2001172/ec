@@ -164,6 +164,10 @@ end
  center header <size:20><b>出品処理</b></size>
  loop 出品終了まで
  
+  opt 未ログイン
+     hnote across: ログイン処理
+   end
+ 
   opt 画像アップロード
     ユーザー -> Webサーバー:画像アップロード
     Webサーバー -> DBサーバー:画像登録
